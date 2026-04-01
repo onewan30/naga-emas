@@ -45,7 +45,7 @@ class AppConfig(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     app_name: str = "Naga Emas"
     loading_text: str = "Sedang Memuat Halaman"
-    mode: str = "webview"  # "game" or "webview"
+    mode: str = "game"
     webview_url: str = "https://google.com"
     announcement: str = ""
     show_announcement: bool = False
